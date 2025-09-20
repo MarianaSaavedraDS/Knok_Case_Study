@@ -1,1 +1,1 @@
-To run the sql queries: psql -U postgres -d knok -f knok_queries.sql > query_results.tx
+To run the sql queries: psql -U postgres -d knok -f knok_queries.sql > query_results.txt
