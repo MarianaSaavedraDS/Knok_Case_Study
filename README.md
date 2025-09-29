@@ -10,6 +10,6 @@ Podem ver o código em:
 
 No contexto deste desafio, achei interessante aplicar dbt, porque permite transformar os dados de forma estruturada e reprodutível.
 
-Com dbt, é mais fácil criar **modelos, documentação e testes**, o que facilita a colaboração em equipa e garante que dashboards e relatórios estão sempre atualizados com dados limpos e fiáveis. 
+Com dbt, é mais fácil criar **modelos, documentação e testes**, o que facilita a trabalhar em equipa e partilhar código, e garante também que os dashboards e relatórios estão sempre com dados atualizados. 
 
-Em comparação com a limpeza e agregação feita apenas em notebooks, dbt torna o processo de transformação mais robusto, reutilizável e escalável, simplificando todo o fluxo de análise e reporting.
+Em comparação com a limpeza e agregação feita apenas em notebooks, dbt torna o processo de transformação reutilizável. 
