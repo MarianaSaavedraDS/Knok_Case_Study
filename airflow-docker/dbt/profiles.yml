@@ -1,0 +1,12 @@
+knok_project:
+  outputs:
+    dev:
+      dbname: knok
+      host: host.docker.internal   # ← lets Airflow container reach your host
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: postgres
+      pass: FCUP917mdsl!
+  target: dev

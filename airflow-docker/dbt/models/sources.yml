@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: raw_appointments       # source logical name
+    schema: public              # actual schema in Postgres
+    tables:
+      - name: appointments_clean

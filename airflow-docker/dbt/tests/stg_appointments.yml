@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_appointments
+    tests:
+      - not_null:
+          column_name: appointment_id
+      - unique:
+          column_name: appointment_id

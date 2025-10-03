@@ -1,0 +1,23 @@
+[2025-10-03T14:10:44.992+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-03T14:10:45.031+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_ml_dag.test_ml_packages_task scheduled__2022-03-01T00:00:00+00:00 [queued]>
+[2025-10-03T14:10:45.041+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_ml_dag.test_ml_packages_task scheduled__2022-03-01T00:00:00+00:00 [queued]>
+[2025-10-03T14:10:45.042+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-03T14:10:45.185+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): test_ml_packages_task> on 2022-03-01 00:00:00+00:00
+[2025-10-03T14:10:45.196+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=833) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-03T14:10:45.198+0000] {standard_task_runner.py:64} INFO - Started process 837 to run task
+[2025-10-03T14:10:45.199+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'test_ml_dag', 'test_ml_packages_task', 'scheduled__2022-03-01T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/test_ml_dag.py', '--cfg-path', '/tmp/tmp_6tcp8ka']
+[2025-10-03T14:10:45.200+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask test_ml_packages_task
+[2025-10-03T14:10:45.264+0000] {task_command.py:426} INFO - Running <TaskInstance: test_ml_dag.test_ml_packages_task scheduled__2022-03-01T00:00:00+00:00 [running]> on host 68ec1039cc61
+[2025-10-03T14:10:45.396+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='test_ml_dag' AIRFLOW_CTX_TASK_ID='test_ml_packages_task' AIRFLOW_CTX_EXECUTION_DATE='2022-03-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-03-01T00:00:00+00:00'
+[2025-10-03T14:10:45.398+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-03T14:10:45.400+0000] {logging_mixin.py:188} INFO - H2O version: 3.46.0.7
+[2025-10-03T14:10:45.400+0000] {logging_mixin.py:188} INFO - MLflow version: 3.4.0
+[2025-10-03T14:10:45.401+0000] {logging_mixin.py:188} INFO - Everything works inside Airflow!
+[2025-10-03T14:10:45.401+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-03T14:10:45.402+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-03T14:10:45.415+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=test_ml_dag, task_id=test_ml_packages_task, run_id=scheduled__2022-03-01T00:00:00+00:00, execution_date=20220301T000000, start_date=20251003T141045, end_date=20251003T141045
+[2025-10-03T14:10:45.454+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-03T14:10:45.478+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-03T14:10:45.481+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
